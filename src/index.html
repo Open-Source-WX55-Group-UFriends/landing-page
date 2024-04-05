@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>FarmLogitech</title>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <header class="fixed top-0 w-full bg-black bg-opacity-50 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="brand-name">
+                <p class="text-green-400 text-2xl font-bold">FarmLogiTech</p>
+            </div>
+
+            <nav>
+                <a href="#ofert">Inicio</a>
+                <a href="#characteristics">Tarifas</a>
+                <a href="#colab">Colaborador</a>
+                <a href="#functionalities">Publica tu anuncio</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section id="principal" class="flex flex-col justify-center items-center h-screen bg-cover bg-center relative" style="background-image: url('https://www.solerpalau.com/es-es/blog/wp-content/uploads/2017/04/iStock-503955594-1.jpg');">
+        <h1 class="text-5xl mb-4">Bienvenido a <span class="text-green-400">FarmLogiTech</span></h1>
+        <h3 class="mb-8">"Descubre una nueva forma de gestionar tu granja"</h3>
+
+        <!-- Botones de Registro e Inicio de Sesión -->
+        <div class="mb-8">
+            <a href="#registro" class="button button-register">Registrarse</a>
+            <a href="#login" class="button button-login">Iniciar Sesión</a>
+        </div>
+
+        <!-- Contenedor para el mensaje de ubicación -->
+        <div class="location-container">
+            <p class="mb-2">¿Nos permites conocer tu ubicación para brindarte un mejor servicio?</p>
+            <button class="button button-location" onclick="solicitarUbicacion()">Permitir Ubicación</button>
+        </div>
+    </section>
+
+    <!-- SECCIONES PARA LOS DEMÁS ESCENARIOS -->
+    <section id="ofert" class="bg-green-200 py-16">
+        <div class="container mx-auto flex justify-around items-center">
+            <div class="img-container bg-cover bg-center h-64 w-1/3" style="background-image: url('https://arbolabc.nyc3.cdn.digitaloceanspaces.com/Science/animals/articles/animales-de-la-granja/cows.jpg');"></div>
+            <div class="texto w-2/3 text-center">
+                <h2>Nosotros somos</h2>
+                <p class="py-4">Somos un equipo dedicado a revolucionar la gestión agrícola, ofreciendo soluciones tecnológicas innovadoras que facilitan el trabajo en las granjas y mejoran la productividad.</p>
+                <p class="pb-4">¡Únete y lleva tu granja al siguiente nivel con nosotros!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="characteristics" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center mb-8">Nuestras Características</h2>
+            <div class="characteristics-cards flex justify-between flex-wrap">
+                <div class="card bg-green-100 p-6 w-full md:w-1/3 mb-8">
+                    <h3 class="text-2xl mb-4">Amplio alcance de funciones</h3>
+                    <p class="mb-4">No solo ofrecemos funciones estándar como gestión de inventario y seguimiento del crecimiento de cultivos, sino también funciones avanzadas como análisis de datos, alertas en tiempo real y asesoramiento personalizado para maximizar la rentabilidad de la granja.</p>
+                    <button class="info">+ Info</button>
+                </div>
+                <div class="card bg-green-100 p-6 w-full md:w-1/3 mb-8">
+                    <h3 class="text-2xl mb-4">Usabilidad y Accesibilidad</h3>
+                    <p class="mb-4">Nuestra plataforma es altamente intuitiva y fácil de usar, lo que la hace accesible para dueños de granjas, trabajadores y empresas grandes las cuales deseen asociarse con granjas. Además, su disponibilidad en línea garantiza un acceso conveniente desde cualquier lugar.</p>
+                    <button class="info">+ Info</button>
+                </div>
+                <div class="card bg-green-100 p-6 w-full md:w-1/3 mb-8">
+                    <h3 class="text-2xl mb-4">Colaboración eficiente</h3>
+                    <p class="mb-4">Fomentamos la interacción y colaboración entre empresas, dueños de granjas y trabajadores, proporcionando herramientas para la comunicación, la asignación de tareas y la valoración de servicios, lo que contribuye a una gestión más eficiente y productiva de las granjas.</p>
+                    <button class="info">+ Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="functionalities" class="py-16 bg-blue-200">
+        <div class="container mx-auto flex justify-around items-center">
+            <div class="img-container bg-cover bg-center h-64 w-1/3" style="background-image: url('https://st4.depositphotos.com/4218696/26911/i/450/depositphotos_269119994-stock-photo-male-hand-using-digital-tablet.jpg');"></div>
+            <div class="texto w-2/3 text-center">
+                <h2>Funcionalidades</h2>
+                <p class="py-4">Contamos con funciones clave para la gestión eficiente de granjas, como seguimiento del crecimiento de cultivos y animales, gestión de inventario, registro de tareas y asignación de labores, así como informes de ingresos y gastos. También proporciona funciones premium como predicciones meteorológicas básicas, asesoramiento personalizado y mayor visibilidad en la plataforma.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-green-700 py-8 text-center">
+        <!-- SIGUENOS EN REDES SOCIALES -->
+        <p class="mb-4">Síguenos en nuestras redes sociales:</p>
+        <div class="social-icons flex justify-center">
+            <a href="#" class="mr-4"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="mr-4"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="mr-4"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- DERECHOS DE AUTOR -->
+        <p class="mt-8">&copy; 2024 FarmLogiTech. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT PARA SOLICITAR UBICACIÓN -->
+    <script>
+        function solicitarUbicacion() {
+            // Tu código para solicitar la ubicación del usuario
+            alert("Se ha solicitado permiso para acceder a tu ubicación.");
+        }
+    </script>
+
+</body>
+</html>
