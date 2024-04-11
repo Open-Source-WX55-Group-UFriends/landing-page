@@ -1,1 +1,51 @@
+US01 - Agregar divs para los servicios en la landing page:
+Acceptance Test:
 
+Given Navega a la landing page.
+When Verifica que haya divs visibles para cada uno de los servicios ofrecidos.
+Then Asegúrate de que los divs estén correctamente alineados y formateados según el diseño especificado.
+
+
+US02 - Agregar imágenes dentro de un div para los métodos de pago en la landing page:
+Acceptance Test:
+
+Given Accede a la landing page.
+When Busca el div destinado a los métodos de pago.
+Then Verifica que haya imágenes visibles de los métodos de pago aceptados.
+Then Confirma que las imágenes estén correctamente enlazadas y sean de alta calidad.
+
+
+US03 - Agregar interacción con los planes de suscripción:
+Acceptance Test:
+
+Given Visita la landing page.
+When Encuentra la sección de planes de suscripción.
+When Intenta seleccionar un plan.
+Then Verifica que al seleccionar un plan se desplieguen las opciones de suscripción correspondientes.
+Then Asegúrate de que el proceso de suscripción funcione correctamente hasta la confirmación del pago (si aplica).
+
+
+US04 - Añadir colaboradores en la landing page:
+Acceptance Test:
+
+Given Accede a la landing page.
+When Busca la sección de colaboradores.
+When Verifica que se muestren los nombres o logos de los colaboradores.
+Then Confirma que haya un enlace o información sobre cómo convertirse en colaborador si es aplicable.
+
+
+US05 - Agregar responsive:
+Acceptance Test:
+
+Given Accede a la landing page desde diferentes dispositivos (PC, tablet, smartphone).
+When Verifica que la página se adapte correctamente a diferentes tamaños de pantalla.
+Then Confirma que todos los elementos sean visibles y estén correctamente alineados en cada dispositivo.
+
+
+US06 - Agregar un carrusel en la landing page:
+Acceptance Test:
+
+Given Visita la landing page.
+When Localiza el carrusel en la página.
+When Verifica que el carrusel muestre múltiples imágenes o contenidos de forma automática o mediante navegación.
+Then Confirma que el carrusel sea funcional y que los usuarios puedan interactuar con él.
